@@ -1,10 +1,12 @@
 const PreviousNext = ({ pokemonList, pokemonIndex, setPokemonIndex }) => {
   const handlePreviousClick = () => {
     setPokemonIndex(pokemonIndex - 1);
+    console.log("PreviousNext :", pokemonIndex);
   };
 
   const handleNextClick = () => {
     setPokemonIndex(pokemonIndex + 1);
+    console.log("PreviousNext :", pokemonIndex);
   };
 
   return (
