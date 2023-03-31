@@ -41,10 +41,12 @@ function App() {
 
   return (
     <div className="AppContainer">
-      ;<div ClassName="navbar "></div>
+      <div className="navbar "></div>
       <div className="content"></div>
       <div className="card">
+        <NavBar pokemonList={pokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
         <PokemonCard pokemon={pokemonList[pokemonIndex]} />
+        <PreviousNext pokemonList={pokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex}/>
       </div>
     </div>
   );

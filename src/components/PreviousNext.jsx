@@ -11,10 +11,10 @@ const PreviousNext = ({ pokemonList, pokemonIndex, setPokemonIndex }) => {
 
   return (
     <>
-      {pokemonList[pokemonIndex] > 0 && (
+      {pokemonIndex > 0 && (
         <input type="button" value="Previous" onClick={handlePreviousClick} />
       )}
-      {pokemonList[pokemonIndex] < pokemonList.length - 1 && (
+      {pokemonIndex < pokemonList.length - 1 && (
         <input type="button" value="Next" onClick={handleNextClick} />
       )}
     </>

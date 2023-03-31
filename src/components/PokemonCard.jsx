@@ -1,12 +1,14 @@
-function PokemonCard(props){
-    // console.log(props)
-    const {imgScr, name} = props
-    return (
-        <figure className="card">
-            {imgSrc? <img src={imgSrc} alt="Image" className="card-img"/> : <p>????</p>}
-            <figcaption>{name}</figcaption>
-        </figure>
-    )
-    
+function PokemonCard({ pokemon }) {
+  // console.log(props)
+  return (
+    <figure className="card">
+      {pokemon.imgSrc ? (
+        <img src={pokemon.imgSrc} alt="Image" className="card-img" />
+      ) : (
+        <p>????</p>
+      )}
+      <figcaption>{pokemon.name}</figcaption>
+    </figure>
+  );
 }
 export default PokemonCard;
